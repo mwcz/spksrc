@@ -22,7 +22,7 @@ CGO_ENABLED=0
 STATIC_BINARIES = 0
 
 # Define SYNCTHING_ARCH as per Syncthing standards
-ifeq ($(findstring $(ARCH),88f5281 88f6281 alpine armada370 armada375 armada38x armadaxp comcerto2k monaco),$(ARCH))
+ifeq ($(findstring $(ARCH),88f5281 88f6281 alpine armada370 rtd1296 armada375 armada38x armadaxp comcerto2k monaco),$(ARCH))
 SYNCTHING_ARCH = arm
 ENV += GOARM=5
 endif
